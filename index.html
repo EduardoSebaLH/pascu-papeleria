@@ -8,7 +8,7 @@
 </head>
 <body>
 
-  <!-- 🧷 Encabezado principal con logo y slogan animado -->
+  <!-- Encabezado principal con logo y slogan animado -->
   <header class="header-principal">
     <div class="container encabezado">
       <div class="logo-central">
@@ -39,21 +39,21 @@
             <p class="meta">Haz clic en una agenda para ver sus detalles.</p>
     <div id="gridAgendas" class="grid"></div>
     </section>
-
+    <br><hr>
     <!-- Sección: Libros impresos -->
     <section id="libros" class="catalogo">
         <h2>Libros impresos</h2>
             <p class="meta">Haz clic en un libro para ver sus detalles.</p>
     <div id="gridLibros" class="grid"></div>
     </section>
-
+    <br><hr>
     <!-- Sección: Encuadernación -->
     <section id="encuadernacion" class="catalogo">
         <h2>Encuadernación</h2>
             <p class="meta">Haz clic en un producto para ver sus detalles.</p>
     <div id="gridEncuadernacion" class="grid"></div>
     </section>
-
+    <br><hr>
     <!-- Modal de producto -->
     <div id="modalBackdrop" class="modal-backdrop">
       <div class="modal">
@@ -71,18 +71,24 @@
     <section id="contacto">
       <h2>Contáctame</h2>
         <div class="contact-form">
-          <form id="contactForm" onsubmit="event.preventDefault(); enviarContacto();">
+          <form action="https://formsubmit.co/Pascu.store@gmail.com" method="POST">
             <label for="cname">Nombre</label>
-            <input id="cname" required />
+            <input id="cname" name="name" required />
 
             <label for="cemail">Correo</label>
-            <input id="cemail" type="email" required />
+            <input id="cemail" name="email" type="email" required />
 
             <label for="cmessage">Mensaje</label>
-            <textarea id="cmessage" rows="4" required></textarea>
-            
+            <textarea id="cmessage" name="message" rows="4" required></textarea>
+
+            <!-- Opcional: redirigir después de enviar -->
+            <input type="hidden" name="_next" value="https://eduardosebalh.github.io/pascu-papeleria/agradecimiento.html">
+
+            <!-- Opcional: evitar spam -->
+            <input type="hidden" name="_captcha" value="false">
+
             <button class="btn" type="submit">Enviar mensaje</button>
-          </form>
+            </form>
         </div>
       </section>
   </main>
@@ -92,13 +98,13 @@
       <p class="footer-legal"> © Todos los derechos reservados - Pascu Store</p>
 
       <div class="footer-icons">
-        <a href="https://wa.me/569XXXXXXXX" target="_blank" aria-label="WhatsApp">
+       <a href="https://wa.me/56958874622?text=Hola%20PascuStore,%20quiero%20consultar%20por%20tus%20servicios! :)" target="_blank">
           <img src="img/whatsapp.png" alt="WhatsApp" />
         </a>
-        <a href="https://instagram.com/pascustore" target="_blank" aria-label="Instagram">
+        <a href="https://www.instagram.com/pascu.papeleria/" target="_blank" aria-label="Instagram">
           <img src="img/instagram.png" alt="Instagram" />
         </a>
-        <a href="mailto:francisca@example.com" aria-label="Correo">
+        <a href="mailto:franciscalizanah@gmail.com" aria-label="Correo electrónico">
           <img src="img/gmail.png" alt="Correo electrónico" />
         </a>
       </div>

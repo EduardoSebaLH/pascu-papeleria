@@ -20,7 +20,7 @@ body {
   color: #4b3f4e;
 }
 
-/* 🧷 Header con logo y slogan animado */
+/* Header con logo y slogan animado */
 .header-principal {
   background: linear-gradient(180deg, var(--accent), var(--accent2));
   padding: 30px 0 10px;
@@ -67,12 +67,24 @@ body {
   opacity: 0.8;
 }
 
+/* Menú principal del header */
 .nav-principal a {
   margin: 0 12px;
   text-decoration: none;
   font-weight: 600;
   color: #4b3f4e;
+  background-color: transparent;
+  padding: 8px 12px;
+  border-radius: var(--radius);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+/* Hover con tono rosado más oscuro */
+.nav-principal a:hover {
+  background-color: #e89ab2; /* tono rosado más profundo */
+  color: white;
+}
+
 
 .btn {
   background: var(--accent);
@@ -159,14 +171,14 @@ body {
 }
 
 /* Contacto */
-/* 📬 Formulario de contacto estilizado */
+/* Formulario de contacto estilizado */
 .contact-form {
   background: var(--card);
   border-radius: var(--radius);
   box-shadow: 0 4px 12px var(--shadow);
   padding: 30px;
   margin: 40px auto;
-  max-width: 600px; /* ✅ Limita el ancho */
+  max-width: 600px; /* Limita el ancho */
   width: 100%;
 }
 
@@ -201,13 +213,29 @@ body {
   background: #fffafc;
 }
 
-.contact-form .btn {
-  align-self: flex-start;
+/* Botón de envío estilizado y centrado */
+.contact-form button[type="submit"] {
+  display: block;
+  margin: 0 auto;
+  background-color: var(--accent); /* tono rosado base */
+  color: white;
+  border: none;
+  border-radius: var(--radius);
   padding: 10px 20px;
   font-size: 1rem;
+  font-weight: 600;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* sombra suave */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* 📬 Footer estilizado con íconos */
+/* Hover con tono rosado más oscuro y sombra más intensa */
+.contact-form button[type="submit"]:hover {
+  background-color: #e89ab2; /* tono rosado más profundo */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Footer estilizado con íconos */
 .footer {
   background: var(--accent2);
   padding: 30px 0;
@@ -272,4 +300,23 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.contact-form button[type="submit"] {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Títulos de secciones con efecto de énfasis */
+.catalogo h2 {
+  font-size: 1.8rem;
+  color: #4b3f4e;
+  transition: transform 0.3s ease, color 0.3s ease;
+  margin-bottom: 10px;
+}
+
+/* Hover: se agranda y se acentúa el color */
+.catalogo h2:hover {
+  transform: scale(1.05);
+  color: #e89ab2; /* tono rosado más profundo */
 }
