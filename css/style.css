@@ -236,6 +236,10 @@ body {
 .footer-icons img {
   width: 28px;
   height: 28px;
+  max-width: 32px;
+  max-height: 32px;
+  object-fit: contain;
+  display: inline-block;
   transition: transform 0.3s ease;
 }
 
