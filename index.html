@@ -70,29 +70,37 @@
 
     <section id="contacto">
       <h2>Contáctame</h2>
-      <div class="contact-form">
-        <form id="contactForm" onsubmit="event.preventDefault(); enviarContacto();">
-          <label>Nombre</label>
-          <input id="cname" required />
-          <label>Correo</label>
-          <input id="cemail" type="email" required />
-          <label>Mensaje</label>
-          <textarea id="cmessage" rows="4" required></textarea>
-          <button class="btn" type="submit">Enviar mensaje</button>
-        </form>
-      </div>
-    </section>
+        <div class="contact-form">
+          <form id="contactForm" onsubmit="event.preventDefault(); enviarContacto();">
+            <label for="cname">Nombre</label>
+            <input id="cname" required />
+
+            <label for="cemail">Correo</label>
+            <input id="cemail" type="email" required />
+
+            <label for="cmessage">Mensaje</label>
+            <textarea id="cmessage" rows="4" required></textarea>
+            
+            <button class="btn" type="submit">Enviar mensaje</button>
+          </form>
+        </div>
+      </section>
   </main>
 
-  <footer class="container">
-    <div class="footer-info">
-      <div>
-        <strong>Pascu Papelería</strong><br />
-        Propiedad de Francisca Lizana — San Bernardo, Chile
-      </div>
-      <div class="meta">
-        Tel: +56 9 XXX XXX XXX<br />
-        Email: francisca@example.com
+  <footer class="footer">
+    <div class="footer-content container">
+      <p class="footer-legal"> © Todos los derechos reservados - Pascu Store</p>
+
+      <div class="footer-icons">
+        <a href="https://wa.me/569XXXXXXXX" target="_blank" aria-label="WhatsApp">
+          <img src="img/whatsapp.png" alt="WhatsApp" />
+        </a>
+        <a href="https://instagram.com/pascustore" target="_blank" aria-label="Instagram">
+          <img src="img/instagram.png" alt="Instagram" />
+        </a>
+        <a href="mailto:francisca@example.com" aria-label="Correo">
+          <img src="img/gmail.png" alt="Correo electrónico" />
+        </a>
       </div>
     </div>
   </footer>
