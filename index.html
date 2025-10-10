@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pascu Papelería — Francisca Lizana</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- 🧷 Encabezado principal con logo y slogan animado -->
+  <header class="header-principal">
+    <div class="container encabezado">
+      <div class="logo-central">
+        <img src="img/logo.jpg" alt="Logo Pascu Papelería" class="logo-img" />
+      </div>
+
+      <!-- Slogan animado horizontal -->
+      <div class="slogan-deslizante">
+        <span>
+          Planifícate para tener todo en orden 💫 &nbsp; Planifícate para tener todo en orden 💫 &nbsp;
+        </span>
+      </div>
+
+      <p class="propiedad">Diseñado con amor por Francisca Lizana</p>
+
+      <nav class="nav-principal">
+        <a href="#agendas">Agendas personalizadas</a>
+        <a href="#libros">Libros impresos</a>
+        <a href="#encuadernacion">Encuadernación</a>
+        <a href="#contacto">Contáctame</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+   <!-- Sección: Agendas personalizadas -->
+    <section id="agendas" class="catalogo">
+        <h2>Agendas personalizadas</h2>
+            <p class="meta">Haz clic en una agenda para ver sus detalles.</p>
+    <div id="gridAgendas" class="grid"></div>
+    </section>
+
+    <!-- Sección: Libros impresos -->
+    <section id="libros" class="catalogo">
+        <h2>Libros impresos</h2>
+            <p class="meta">Haz clic en un libro para ver sus detalles.</p>
+    <div id="gridLibros" class="grid"></div>
+    </section>
+
+    <!-- Sección: Encuadernación -->
+    <section id="encuadernacion" class="catalogo">
+        <h2>Encuadernación</h2>
+            <p class="meta">Haz clic en un producto para ver sus detalles.</p>
+    <div id="gridEncuadernacion" class="grid"></div>
+    </section>
+
+    <!-- Modal de producto -->
+    <div id="modalBackdrop" class="modal-backdrop">
+      <div class="modal">
+        <img id="modalImg" class="bigimg" src="" alt="Producto" />
+        <div class="modal-content">
+          <h2 id="modalTitle"></h2>
+          <p id="modalDesc" class="meta"></p>
+          <ul id="modalFeatures"></ul>
+          <p class="price">Precio: <span id="modalPrice"></span></p>
+          <button class="btn" id="btnCerrar">Cerrar</button>
+        </div>
+      </div>
+    </div>
+
+    <section id="contacto">
+      <h2>Contáctame</h2>
+      <div class="contact-form">
+        <form id="contactForm" onsubmit="event.preventDefault(); enviarContacto();">
+          <label>Nombre</label>
+          <input id="cname" required />
+          <label>Correo</label>
+          <input id="cemail" type="email" required />
+          <label>Mensaje</label>
+          <textarea id="cmessage" rows="4" required></textarea>
+          <button class="btn" type="submit">Enviar mensaje</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container">
+    <div class="footer-info">
+      <div>
+        <strong>Pascu Papelería</strong><br />
+        Propiedad de Francisca Lizana — San Bernardo, Chile
+      </div>
+      <div class="meta">
+        Tel: +56 9 XXX XXX XXX<br />
+        Email: francisca@example.com
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
